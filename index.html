@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <!-- FIXED: proper viewport meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Milan's Portfolio">
+  <meta name="author" content="Milan Patel">
 
   <title>Milan's Portfolio</title>
-  <link rel="icon" type="image/ico" href= "https://img.icons8.com/emoji/20/000000/man-technologyst.png"></link>
+  <!-- FIXED: self-closing link tag -->
+  <link rel="icon" type="image/ico" href="https://img.icons8.com/emoji/20/000000/man-technologyst.png">
 
-  
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,6 +23,148 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
+  <!-- ADDED: Responsive overrides for mobile, tablet, and desktop -->
+  <style>
+    /* ===== HERO / BANNER IMAGE ===== */
+    .hero-banner {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ===== ABOUT SECTION ICONS (resume + cert) ===== */
+    .about-extra-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .about-extra-links img {
+      height: 50px;
+      width: auto;
+    }
+
+    .about-extra-links .cert-badge {
+      height: 55px;
+      width: auto;
+    }
+
+    /* ===== CONTACT LINE WRAPPING ===== */
+    .subheading.contact-info {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .subheading.contact-info a {
+      word-break: break-all;
+    }
+
+    /* ===== MOBILE (max-width: 575px) ===== */
+    @media (max-width: 575.98px) {
+      .hero-banner {
+        max-height: 250px;
+      }
+
+      .resume-section {
+        padding: 2rem 1rem !important;
+      }
+
+      .resume-section h1 {
+        font-size: 2rem;
+      }
+
+      .resume-section h2 {
+        font-size: 1.6rem;
+      }
+
+      .resume-section h3 {
+        font-size: 1.1rem;
+      }
+
+      .subheading {
+        font-size: 0.95rem;
+      }
+
+      .lead {
+        font-size: 0.95rem;
+      }
+
+      .social-icons a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+      }
+
+      .dev-icons .list-inline-item {
+        font-size: 1.8rem;
+        margin: 5px;
+      }
+
+      .about-extra-links {
+        justify-content: flex-start;
+      }
+
+      .subheading.contact-info img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    /* ===== TABLET (576px – 991px) ===== */
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .hero-banner {
+        max-height: 400px;
+      }
+
+      .resume-section {
+        padding: 3rem 1.5rem !important;
+      }
+
+      .resume-section h1 {
+        font-size: 2.8rem;
+      }
+
+      .dev-icons .list-inline-item {
+        font-size: 2.2rem;
+        margin: 6px;
+      }
+    }
+
+    /* ===== DESKTOP (992px+) ===== */
+    @media (min-width: 992px) {
+      .hero-banner {
+        max-height: 600px;
+      }
+    }
+
+    /* ===== PUBLICATION LIST FIX ===== */
+    #publications ul {
+      padding-left: 20px;
+    }
+
+    #publications ul li {
+      margin-bottom: 12px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* ===== PROJECT GITHUB ICON INLINE FIX ===== */
+    .project-title-link {
+      display: inline;
+      font-size: inherit;
+      vertical-align: middle;
+    }
+
+    .project-title-link .list-inline-item {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -32,10 +173,11 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Milan Patel</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/side5.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/side5.jpg" alt="Milan Patel">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,7 +185,6 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
-        
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
@@ -65,63 +206,67 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
-        
-       
-       
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid p-0">
-    <img class="" src="img/received_460016908689256.jpg" alt="" height="1070" width="1420"  >
-      
+
+    <!-- FIXED: Removed hardcoded width/height, added responsive class -->
+    <img class="hero-banner" src="img/received_460016908689256.jpg" alt="Banner Image">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
-         <imgalign="right"> 
-          
         <h1 class="mb-0">Milan
           <span class="text-primary">Patel</span>
         </h1>
-       <div class="subheading mb-5"><img src="https://img.icons8.com/ios/30/000000/order-delivered.png"> Atlanta GA 30360 · <img src="https://img.icons8.com/ios/30/000000/phone.png"> 321-831-8129 ·&nbsp;
-          <img src="https://img.icons8.com/ios/30/000000/send-mass-email.png">  <a href="mailto:name@email.com">pmilan5410@gmail.com</a>  / 
-          <a href="mailto:name@email.com">pmh231294@gmail.com</a>
-        </div>
-          
-        <p class="lead mb-5" style="text-align:justify";>
-          I am an autodidact IT professional with experience in a diverse technical discipline like cloud development/computing, networking, embedded development, and data analytics/visualization through profound hands-on experiences. I have been managing and configuring Amazon web services (AWS), Microsoft AZURE, Google cloud platform (GCP) cloud infrastructures for an e-commerce and supply-chain production application from the planning stage to completion; combined with dexterous experience in Web development(Backend/ Frontend),Containerization(Docker/ Kubernetes),Cloud Automation(BashScript/ Python/ Ansible/ Terraform/ Chef), Cloud networking(VPN/VPC Peering), application data analysis using (Prometheus) and visualization using (Matplotlib) . Experienced in utilizing SVC tools like Git, GitLab, Bitbucket for code management. Full understanding/experienced of SDLC, Agile, Scrum methodologies and processes.
-            
 
-          </p>
+        <!-- FIXED: added contact-info class for responsive wrapping -->
+        <div class="subheading mb-5 contact-info">
+          <img src="https://img.icons8.com/ios/30/000000/order-delivered.png" alt="Location"> Atlanta GA 30360 ·
+          <img src="https://img.icons8.com/ios/30/000000/phone.png" alt="Phone"> 321-831-8129 ·&nbsp;
+          <img src="https://img.icons8.com/ios/30/000000/send-mass-email.png" alt="Email">
+          <a href="mailto:pmilan5410@gmail.com">pmilan5410@gmail.com</a> /
+          <a href="mailto:pmh231294@gmail.com">pmh231294@gmail.com</a>
+        </div>
+
+        <p class="lead mb-5" style="text-align:justify;">
+          I am an autodidact IT professional with experience in a diverse technical discipline like cloud
+          development/computing, networking, embedded development, and data analytics/visualization through profound
+          hands-on experiences. I have been managing and configuring Amazon web services (AWS), Microsoft AZURE, Google
+          cloud platform (GCP) cloud infrastructures for an e-commerce and supply-chain production application from the
+          planning stage to completion; combined with dexterous experience in Web development (Backend/Frontend),
+          Containerization (Docker/Kubernetes), Cloud Automation (BashScript/Python/Ansible/Terraform/Chef), Cloud
+          networking (VPN/VPC Peering), application data analysis using (Prometheus) and visualization using
+          (Matplotlib). Experienced in utilizing SVC tools like Git, GitLab, Bitbucket for code management. Full
+          understanding/experienced of SDLC, Agile, Scrum methodologies and processes.
         </p>
-        
-  
-    
-          
 
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/milankumar-patel23 " target="_blank">
+          <a href="https://www.linkedin.com/in/milankumar-patel23" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/milanoo7" target="_blank">
+          <a href="https://github.com/milanoo7" target="_blank" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
-      
-        </div>  
-        
-        <a href="https://drive.google.com/file/d/1KOUSDKXu2aFWMQHRJCpaoqWndYJzsIwy/view?usp=drive_link" target="_blank">
-          <img class=" " style="vertical-align:middle;margin:-90px -5px -10px 155px" height="50" width="50" src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/000000/external-resume-human-resources-itim2101-lineal-color-itim2101.png">
-        </a> 
+        </div>
 
-        <a href="https://drive.google.com/file/d/1IxKIAKQtIPINvBgxld0pdbSw9CnogKyL/view?usp=drive_link" target="_blank">
-          <img class=" " style="vertical-align:middle;margin:-90px -2px -11px 15px" height="62" width="90" src="img/AWS-SA-Pro.png">
-        </a>
-       
-      </div> 
+        <!-- FIXED: Removed inline margin hacks, using flex container instead -->
+        <div class="about-extra-links">
+          <a href="https://drive.google.com/file/d/1KOUSDKXu2aFWMQHRJCpaoqWndYJzsIwy/view?usp=drive_link"
+            target="_blank" aria-label="Resume">
+            <img
+              src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/000000/external-resume-human-resources-itim2101-lineal-color-itim2101.png"
+              alt="Resume">
+          </a>
+          <a href="https://drive.google.com/file/d/1IxKIAKQtIPINvBgxld0pdbSw9CnogKyL/view?usp=drive_link"
+            target="_blank" aria-label="AWS Certification">
+            <img class="cert-badge" src="img/AWS-SA-Pro.png" alt="AWS Solutions Architect">
+          </a>
+        </div>
+
+      </div>
     </section>
-
-    <hr class="m-0">
-
 
     <hr class="m-0">
 
@@ -129,14 +274,13 @@
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
 
-
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-
             <h3 class="mb-0">Trine University, Angola, Indiana, USA</h3>
-            <div class="subheading mb-3"> Master of Business Administration (MBA) in Engineering Management </div>
-         
-            <p>Executive Communication, Statistics & Quantitative Methods, New Product Development & Innovation Strategies, Project Management, Total Quality Management, Organizational Leadership for Engineers, Engineering Management Capstone</p>
+            <div class="subheading mb-3">Master of Business Administration (MBA) in Engineering Management</div>
+            <p>Executive Communication, Statistics &amp; Quantitative Methods, New Product Development &amp; Innovation
+              Strategies, Project Management, Total Quality Management, Organizational Leadership for Engineers,
+              Engineering Management Capstone</p>
             <p>GPA: 3.90 /4</p>
           </div>
           <div class="resume-date text-md-right">
@@ -146,11 +290,10 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-
             <h3 class="mb-0">Florida Institute of Technology, Melbourne, FL, USA</h3>
             <div class="subheading mb-3">Masters of Science in Computer Engineering</div>
-         
-            <p>Graduate Coursework: Computer Architecture; Applied Discrete Mathematics; Computer Networks; Artificial Intelligence Data-Structures and Algorithm; Real-Time Embedded Systems; Network Security</p>
+            <p>Graduate Coursework: Computer Architecture; Applied Discrete Mathematics; Computer Networks; Artificial
+              Intelligence Data-Structures and Algorithm; Real-Time Embedded Systems; Network Security</p>
             <p>GPA: 3.50 /4</p>
           </div>
           <div class="resume-date text-md-right">
@@ -162,9 +305,8 @@
           <div class="resume-content">
             <h3 class="mb-0">Uka Tarsadia University (CGPIT), Surat, GJ, India</h3>
             <div class="subheading mb-3">Bachelor of Technology in Electronics and Communications Engineering</div>
-            <p>
-              Undergraduate Coursework: Database Systems; Digital Systems; Computer Networks; Neural Networks; Image Processing
-            </p>
+            <p>Undergraduate Coursework: Database Systems; Digital Systems; Computer Networks; Neural Networks; Image
+              Processing</p>
             <p>GPA: 3.20 /4</p>
           </div>
           <div class="resume-date text-md-right">
@@ -180,83 +322,81 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
+
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"> Cloud Engineer </h3>
-            <div class="subheading mb-3"> Amazon Web Services (AWS) , Portland, OR, USA</div>
-            <p>•	Daily duties include provide technical assistance to Enterprise scale clients to setup cloud infrastructure using Elastic Container Service (ECS), Fargate, ECR, CodeBuild, CodeCommit and Elastic Kubernetes Service (EKS) services
-for rapid deployment and scalable operations of business application as well as help them to troubleshoot any issues related to it.
-
-            </p> 
-            <p>•	 Work with internal container service teams to enhance and test the functionality of AWS container services. .</p> 
-             
-               
-                </div>
+            <h3 class="mb-0">Cloud Engineer</h3>
+            <div class="subheading mb-3">Amazon Web Services (AWS), Portland, OR, USA</div>
+            <p>• Daily duties include provide technical assistance to Enterprise scale clients to setup cloud
+              infrastructure using Elastic Container Service (ECS), Fargate, ECR, CodeBuild, CodeCommit and Elastic
+              Kubernetes Service (EKS) services for rapid deployment and scalable operations of business application as
+              well as help them to troubleshoot any issues related to it.</p>
+            <p>• Work with internal container service teams to enhance and test the functionality of AWS container
+              services.</p>
+          </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Oct 2021 - Present</span>
           </div>
         </div>
-         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"> Cloud Operations Engineer </h3>
+            <h3 class="mb-0">Cloud Operations Engineer</h3>
             <div class="subheading mb-3">Revel Systems, Atlanta, GA, USA</div>
-            <p>•	Managing the AWS cloud infrastructure of Revel POS systems  and Supply/Chain production Env. Includes Updating serverless Lambda Function with new code through CI/CD, Monitor Backend APIs performance on CloudFront deployment, SQS queue management.
-            </p> 
-            <p>•	Monitored logs by enabling AWS CloudWatch triggers on the instances and imported the log files to Cloud storage S3 buckets .</p> 
-             
-             
-             <p>•	Created VPC networks, Subnets, Firewall Rules, configured IP address ranges and Gateways, assigned protocols and priorities on AWS. Established data communication between internal applications using networking protocols namely TCP/IP, HTTP, DNS, and SSH.</p>
-             
-          
-            
-           
-            
-          <p>•	Created and managed clusters, containers, pods, and nodes on Google Kubernetes Engine. Used Kubernetes to orchestrate the deployment, scaling and management of Docker Containers.
-            </p>     
-            
-            
-            
-            <p>•	Set up GitLab and create projects, to extract local repositories using SourceTree and built CI/CD pipelines using CodeBuild and CodeDeploy on Amazon Web Services (AWS) deployed APIs and Frontend On Aws Lambda and CloudFront.
-            </p> 
-            
-               
-                </div>
+            <p>• Managing the AWS cloud infrastructure of Revel POS systems and Supply/Chain production Env. Includes
+              Updating serverless Lambda Function with new code through CI/CD, Monitor Backend APIs performance on
+              CloudFront deployment, SQS queue management.</p>
+            <p>• Monitored logs by enabling AWS CloudWatch triggers on the instances and imported the log files to Cloud
+              storage S3 buckets.</p>
+            <p>• Created VPC networks, Subnets, Firewall Rules, configured IP address ranges and Gateways, assigned
+              protocols and priorities on AWS. Established data communication between internal applications using
+              networking protocols namely TCP/IP, HTTP, DNS, and SSH.</p>
+            <p>• Created and managed clusters, containers, pods, and nodes on Google Kubernetes Engine. Used Kubernetes
+              to orchestrate the deployment, scaling and management of Docker Containers.</p>
+            <p>• Set up GitLab and create projects, to extract local repositories using SourceTree and built CI/CD
+              pipelines using CodeBuild and CodeDeploy on Amazon Web Services (AWS) deployed APIs and Frontend On Aws
+              Lambda and CloudFront.</p>
+          </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Dec 2020 - Oct 2021</span>
           </div>
         </div>
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"> DevOps Engineer </h3>
+            <h3 class="mb-0">DevOps Engineer</h3>
             <div class="subheading mb-3">Miracle Software System, Duluth, GA, USA</div>
-            <p> •	Daily duties include writing a shell scripts and ansible script to automate deployment of NodeJS applications on AWS Lambda, building Docker images, and deploying the images to Elastic Container Registry (ECR) and Elastic Container Services (ECS) on Amazon Web Services.</p>
-             <p> •	Deployed Angular and NodeJS applications from GitLab to AWS S3, CloudFront, and Lambda through Jenkins CI/CD pipeline.</p>
-             <p>•	Monitored logs by enabling Aws CloudWatch and Prometheus logging on the instances and imported the log files to Cloud storage buckets in GCP.</p> 
-             
-             
-             <p>•	Created VPC networks, Subnets, Firewall Rules, configured IP address ranges and Gateways, assigned protocols and priorities on GCP. Established data communication between internal applications using networking protocols namely TCP/IP, HTTP, DNS, and SSH.</p>
-             
-             <p>•	Built Instance Templates for frontend and backend, added them to Managed Instance Groups and Unmanaged Instance Groups with autoscaling enabled virtual machines to maintain the stability in CPU usage.
-            </p>  
-            
-            <p>•	Enabled APIs for Cloud Storage access, Kubernetes Engine, Compute engine, created billing exports on BigQuery, and set up budget alerts to notify the developers about the monthly limit.
-            </p>  
-            
-            <p>•	Created and managed clusters, containers, pods, and nodes on Google Kubernetes Engine. Used Kubernetes to orchestrate the deployment, scaling and management of Docker Containers.
-            </p>     
-            
-            <p>•	Created Continuous Integration/Deployment  (CI/CD) pipelines in Azure DevOps and setup builds for node.js based applications and configured resource groups, app service plans, and secure vault for environment variable storage.
-            </p>  
-            
-            <p>•	Set up Bitbucket and create projects, to extract local repositories using SourceTree and built CI/CD pipelines using CodeBuild and CodeDeploy on Amazon Web Services (AWS) deployed APIs and Frontend On Aws Lambda and CloudFront.
-            </p> 
-            
-            <p>•	Wrote a Docker file for creating Docker images for Jenkins, Tomcat and used the concepts of persistence volume to store the logs of containers on host else the place we require.
-            </p>    
-            <p>•	Created Kubernetes Environment on GCP platform and maintain and configured auto scalability with persistence volumes to serve the dynamic flow to incoming web traffic. Configured Prometheus to monitor and log the traffic performance. 
-            </p>     
-            <p>•	Created and Managing the AWS cloud infrastructure of E-Commerce website and Supply/Chain production Env. Includes Updating serverless Lambda Function with new code, Monitor Backend APIs performance on Prometheus, CloudFront deployment, SQS queue management.
-            </p>     </div>
+            <p>• Daily duties include writing a shell scripts and ansible script to automate deployment of NodeJS
+              applications on AWS Lambda, building Docker images, and deploying the images to Elastic Container Registry
+              (ECR) and Elastic Container Services (ECS) on Amazon Web Services.</p>
+            <p>• Deployed Angular and NodeJS applications from GitLab to AWS S3, CloudFront, and Lambda through Jenkins
+              CI/CD pipeline.</p>
+            <p>• Monitored logs by enabling Aws CloudWatch and Prometheus logging on the instances and imported the log
+              files to Cloud storage buckets in GCP.</p>
+            <p>• Created VPC networks, Subnets, Firewall Rules, configured IP address ranges and Gateways, assigned
+              protocols and priorities on GCP. Established data communication between internal applications using
+              networking protocols namely TCP/IP, HTTP, DNS, and SSH.</p>
+            <p>• Built Instance Templates for frontend and backend, added them to Managed Instance Groups and Unmanaged
+              Instance Groups with autoscaling enabled virtual machines to maintain the stability in CPU usage.</p>
+            <p>• Enabled APIs for Cloud Storage access, Kubernetes Engine, Compute engine, created billing exports on
+              BigQuery, and set up budget alerts to notify the developers about the monthly limit.</p>
+            <p>• Created and managed clusters, containers, pods, and nodes on Google Kubernetes Engine. Used Kubernetes
+              to orchestrate the deployment, scaling and management of Docker Containers.</p>
+            <p>• Created Continuous Integration/Deployment (CI/CD) pipelines in Azure DevOps and setup builds for
+              node.js based applications and configured resource groups, app service plans, and secure vault for
+              environment variable storage.</p>
+            <p>• Set up Bitbucket and create projects, to extract local repositories using SourceTree and built CI/CD
+              pipelines using CodeBuild and CodeDeploy on Amazon Web Services (AWS) deployed APIs and Frontend On Aws
+              Lambda and CloudFront.</p>
+            <p>• Wrote a Docker file for creating Docker images for Jenkins, Tomcat and used the concepts of persistence
+              volume to store the logs of containers on host else the place we require.</p>
+            <p>• Created Kubernetes Environment on GCP platform and maintain and configured auto scalability with
+              persistence volumes to serve the dynamic flow to incoming web traffic. Configured Prometheus to monitor and
+              log the traffic performance.</p>
+            <p>• Created and Managing the AWS cloud infrastructure of E-Commerce website and Supply/Chain production
+              Env. Includes Updating serverless Lambda Function with new code, Monitor Backend APIs performance on
+              Prometheus, CloudFront deployment, SQS queue management.</p>
+          </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Nov 2019 - Dec 2020</span>
           </div>
@@ -264,22 +404,17 @@ for rapid deployment and scalable operations of business application as well as 
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"> Full-Stack Developer</h3>
+            <h3 class="mb-0">Full-Stack Developer</h3>
             <div class="subheading mb-3">Aeronyde Corporation, Melbourne, FL, USA</div>
-            <p> •  Programmed a dashboard portal using web development technologies like ReactJS, NodeJS, JavaScript and MySQL for drone-user community. Worked on Android development, cloud deployment and database architecture as part of SkySync project.
-            </p>
-            <p>
-              •	Built Continuous Integration pipelines in Jenkins, for applications/projects to automate the Continuous Delivery/Deployment to S3 storage buckets on Amazon Web Services.
-            </p>
-            <p>
-              •	Wrote Ansible Script to automate the task sequences, queries, and operating system deployments.
-            </p>
-            <p>
-              •	Created Amazon Web Services (AWS) Security Groups and VPC which behaved as virtual cloud to isolate and control the traffic allowed to reach one or more Production AWS EC2 instances.
-            </p>
-
-
-            </div>
+            <p>• Programmed a dashboard portal using web development technologies like ReactJS, NodeJS, JavaScript and
+              MySQL for drone-user community. Worked on Android development, cloud deployment and database architecture
+              as part of SkySync project.</p>
+            <p>• Built Continuous Integration pipelines in Jenkins, for applications/projects to automate the Continuous
+              Delivery/Deployment to S3 storage buckets on Amazon Web Services.</p>
+            <p>• Wrote Ansible Script to automate the task sequences, queries, and operating system deployments.</p>
+            <p>• Created Amazon Web Services (AWS) Security Groups and VPC which behaved as virtual cloud to isolate and
+              control the traffic allowed to reach one or more Production AWS EC2 instances.</p>
+          </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">May 2019 - Nov 2019</span>
           </div>
@@ -287,11 +422,14 @@ for rapid deployment and scalable operations of business application as well as 
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Embedded Engineer </h3>
-            <div class="subheading mb-3">Tatvamasi Automation Solutions, Surat, GJ, India </div>
-            <p>• Optimize several embedded automation tools, such as Scala and programmable logic controller (PLC) to automate actuators; Programed PLC components using embedded C and assembly language.
-              Keenly performed testing, troubleshooting and installation of software on automation devices over software defined networking (SDN) platform. Designed Technical Documentation and Used Proteus to  design circuit schematics of actuators.</p>
-              </div>
+            <h3 class="mb-0">Embedded Engineer</h3>
+            <div class="subheading mb-3">Tatvamasi Automation Solutions, Surat, GJ, India</div>
+            <p>• Optimize several embedded automation tools, such as Scala and programmable logic controller (PLC) to
+              automate actuators; Programed PLC components using embedded C and assembly language. Keenly performed
+              testing, troubleshooting and installation of software on automation devices over software defined
+              networking (SDN) platform. Designed Technical Documentation and Used Proteus to design circuit schematics
+              of actuators.</p>
+          </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2016 - May 2017</span>
           </div>
@@ -300,273 +438,231 @@ for rapid deployment and scalable operations of business application as well as 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">IoT Internship</h3>
-            <div class="subheading mb-3"> ExpertsHub Industry Skill Development Center, Bangalore, KA, India</div>
-            <p>• Conducted critical research on various network protocol and remote sensors to create smart prototype on different computing platforms, such as Arduino UNO and Raspberry Pi
-              Optimized Java functionality in development of smart streetlight monitoring prototype to reduce energy consumption. Implemented remote monitoring through a local host website built using HTML/CSS, C++, and Android application.
-            </p>
-              </div>
+            <div class="subheading mb-3">ExpertsHub Industry Skill Development Center, Bangalore, KA, India</div>
+            <p>• Conducted critical research on various network protocol and remote sensors to create smart prototype on
+              different computing platforms, such as Arduino UNO and Raspberry Pi. Optimized Java functionality in
+              development of smart streetlight monitoring prototype to reduce energy consumption. Implemented remote
+              monitoring through a local host website built using HTML/CSS, C++, and Android application.</p>
+          </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">May 2016 - August 2016</span>
           </div>
         </div>
 
-        
-
       </div>
-
     </section>
+
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
       <div class="w-100">
         <h2 class="mb-5">Projects</h2>
-        
-        
-        
-         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"> BNP (Baby name prediction) application using Python, Scikit-learn and big query framework &nbsp; <a href="https://github.com/milanoo7/"> 
-              <li class="list-inline-item">
-                <i class="fab fa-github"></i>
-              </li>
-            </a> </h3>
-            <div class="subheading mb-3"> Miracle Software Systems </div>
-            <p>	Developed a machine learning model using technologies like python, big query , Sklearn to predict the popular name in the future with its gender. Datasets were were classified with 57% accuracy 
-          <p>
-            <u> Technology/Software used: </u>  Sci-kit Learn, NumPy, Pandas, Python, PyCharm 
-           
-          </p>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Jan 2020–Present</span>
-          </div>
-        </div>
-        
-        
-         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Automated the pipeline creation between Jenkins and Github using Shell-Sctipt and AWS. &nbsp; <a href="https://github.com/milanoo7/"> 
-              <li class="list-inline-item">
-                <i class="fab fa-github"></i>
-              </li>
-            </a> </h3>
-            <div class="subheading mb-3"> Miracle Software Systems </div>
-            <p>	  Integrated Github and Jenkins using webhook to automated the build process. Run a shell script to create and configure Jenkins jobs in EC2 instance.
-          <p>
-            <u> Technology/Software used: </u>  Jenkins, GitHub, AWS EC2, ShellScript 
-           
-          </p>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Dec 2019–Jan 2020 </span>
-          </div>
-        </div>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">CRM (Customer relationship management) application using Spring framework and ReactJS.. &nbsp; <a href="https://github.com/milanoo7/"> 
-              <li class="list-inline-item">
-                <i class="fab fa-github"></i>
-              </li>
-            </a> </h3>
-            <div class="subheading mb-3"> Miracle Software Systems </div>
-            <p>	   t Developed a backend of an application in Spring framework using Java 8 to keep tracks of employee with all the necessary details. It has all the CRUD functionality. Front-end of the application is designed in a ReactJS library with a material design.
-          <p>
-            <u> Technology/Software used: </u>  Java, Spring Boot Framework, Hibernate, JPA, MySQL, Spring Boot Dev tool, ReactJS, JavaScript, RES Tom-cat, Eclipse 
 
-           
-          </p>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Dec 2019–Jan 2020 </span>
-          </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <!-- FIXED: Removed <li> from inside <h3>/<a> — used <span> instead -->
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"> Heart-Disease Diagnosis Using Deep-Learning Techniques &nbsp; <a href="https://github.com/milanoo7/Heart-Disease-Classification" target="_blank"> 
-              <li class="list-inline-item">
+            <h3 class="mb-0">BNP (Baby name prediction) application using Python, Scikit-learn and big query
+              framework&nbsp;
+              <a href="https://github.com/milanoo7/" target="_blank" class="project-title-link">
                 <i class="fab fa-github"></i>
-              </li>
-            </a> </h3>
-            <div class="subheading mb-3"> CSE 5290:Artificial Intelligence,  Florida Institute of Technology</div>
-            <p>	Developed a Convolutional Neural Network (CNN) in PyCharm using machine learning Python libraries, such as scikit-learn that determined the heart abnormalities from different dataset of heart ECG and audio samples that were classified with 96% accuracy 
-          <p>
-            <u> Technology/Software used: </u>  Sci-kit Learn, NumPy, Pandas, Python, PyCharm 
-           
-          </p>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2018–December 2018</span>
+              </a>
+            </h3>
+            <div class="subheading mb-3">Miracle Software Systems</div>
+            <p>Developed a machine learning model using technologies like python, big query, Sklearn to predict the
+              popular name in the future with its gender. Datasets were classified with 57% accuracy.</p>
+            <p><u>Technology/Software used:</u> Sci-kit Learn, NumPy, Pandas, Python, PyCharm</p>
           </div>
-        </div>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"> Automated Pac-Man with BFS and DFS algorithm implementation&nbsp; <a href="https://github.com/milanoo7/AI-BFS-DFS-Implementation" target="_blank"> 
-              <li class="list-inline-item">
-                <i class="fab fa-github"></i>
-              </li>
-            </a> </h3>
-            <div class="subheading mb-3"> CSE 5290:Artificial Intelligence,  Florida Institute of Technology</div>
-            <p>Automated the safest and shortest path finding process to complete the Pac-Man game
-              Executed breadth-first search and depth-first search algorithm in PyCharm using Python libraries which decreased the completion time by 43%.
-              <p>
-                <u> Technology/Software used:</u>   PyPI, Python, PyCharm 
-               
-              </p>  
-            </div>
-              
           <div class="resume-date text-md-right">
-            <span class="text-primary">November 2017–December 2017</span>
+            <span class="text-primary">Jan 2020 – Present</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Speechwriter Android Application &nbsp;<a href="https://github.com/milanoo7/Speechwriter-Android-Application"target="_blank"> 
-              <li class="list-inline-item">
+            <h3 class="mb-0">Automated the pipeline creation between Jenkins and Github using Shell-Script and
+              AWS&nbsp;
+              <a href="https://github.com/milanoo7/" target="_blank" class="project-title-link">
                 <i class="fab fa-github"></i>
-              </li>
-            </a> </h3>
-            <div class="subheading mb-3">ECE 5590 : Android Embedded Programming , Florida Institute of Technology </div>
-            <p>	Designed an application that converted human speech into a text message with material layout design using speech recognition API and Java integrated IntelliJ IDEA <p>
-              <u> Technology/Software used:</u>   SpeechAPI, Material Design, Android Studio, Java
-             
-            </p>  </div>
+              </a>
+            </h3>
+            <div class="subheading mb-3">Miracle Software Systems</div>
+            <p>Integrated Github and Jenkins using webhook to automated the build process. Run a shell script to create
+              and configure Jenkins jobs in EC2 instance.</p>
+            <p><u>Technology/Software used:</u> Jenkins, GitHub, AWS EC2, ShellScript</p>
+          </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">January 2018–April 2018</span>
+            <span class="text-primary">Dec 2019 – Jan 2020</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Network Traffic Simulator &nbsp;<a href="https://github.com/milanoo7/Network-Traffic-Simulator-" target="_blank"> 
-              <li class="list-inline-item">
+            <h3 class="mb-0">CRM (Customer relationship management) application using Spring framework and
+              ReactJS&nbsp;
+              <a href="https://github.com/milanoo7/" target="_blank" class="project-title-link">
                 <i class="fab fa-github"></i>
-              </li>
-            </a> </h3>
-            <div class="subheading mb-3"> ECE 5534 : Computer Network, , Florida Institute of Technology  </div>
-            <p> Designed a graphical simulator in Python to analyze the behavioral characteristics of CSMA protocol under the dynamic network; thus improving the channel utilization and reducing collision done by node
-              
-              </p>
-              <p><u> Technology/Software used:</u>   MATLAB, Tkinter, Python</p>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2017-November 2017</span>
-
+              </a>
+            </h3>
+            <div class="subheading mb-3">Miracle Software Systems</div>
+            <p>Developed a backend of an application in Spring framework using Java 8 to keep tracks of employee with
+              all the necessary details. It has all the CRUD functionality. Front-end of the application is designed in a
+              ReactJS library with a material design.</p>
+            <p><u>Technology/Software used:</u> Java, Spring Boot Framework, Hibernate, JPA, MySQL, Spring Boot Dev
+              tool, ReactJS, JavaScript, REST, Tomcat, Eclipse</p>
           </div>
-
-          
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-              <h3 class="mb-0">Real-time Object Recognition and Tracking Prototype &nbsp;<a href="https://github.com/milanoo7/object_tracking" target="_blank"> 
-                <li class="list-inline-item">
-                  <i class="fab fa-github"></i>
-                </li>
-              </a></h3>
-              <div class="subheading mb-3"> Project 030070705  : Senior Design Project , Uka Tarsadia University </div>
-              <p> Designed a prototype that monitored movements of any objects, including human with 2D coordinates
-                Configured Raspberry Pi as computing unit with suitable image processing library, such as OpenCV with interfacing webcam on Raspbian OS
-              </p>
-              <p><u> Technology/Software used:</u>   RaspberryPi, PiCamera, OpenCV, C++</p>
-              
-              
-                 
-                 
-              </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Auguest 2015-January 2016</span>
-            </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"> Student Information Archive &nbsp;<a href="https://github.com/milanoo7/Student-Information-Archive-" target="_blank"> 
-              <li class="list-inline-item">
-                <i class="fab fa-github"></i>
-              </li>
-            </a></h3>
-            <div class="subheading mb-3"> TH 030070205  : Computer Programming , Uka Tarsadia University</div>
-            <p> 	Designed archive using JavaFX and SQL with graphical design functionality to track all student’s credentials and academic records.  <p>
-              <u> Technology/Software used:</u>   JavaFX, Java, C++, SQL
-            </p></div>
-             
           <div class="resume-date text-md-right">
-            <span class="text-primary">January 2015–May 2015</span>
+            <span class="text-primary">Dec 2019 – Jan 2020</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Propeller Display using Atmel Controller &nbsp;<a href="https://github.com/milanoo7/Heart-Disease-Classification" target="_blank"> 
-              <li class="list-inline-item">
+            <h3 class="mb-0">Heart-Disease Diagnosis Using Deep-Learning Techniques&nbsp;
+              <a href="https://github.com/milanoo7/Heart-Disease-Classification" target="_blank"
+                class="project-title-link">
                 <i class="fab fa-github"></i>
-              </li>
-            </a></h3>
-            <div class="subheading mb-3"> Project 030070704  : Junior Year Project , Uka Tarsadia University </div>
-            <p> Created a new concept of display through persistence of vision fundamental
-              Took charge of conceptualizing a schematic model of circuit in Proteus simulator and its implementation on PCB by installing hardware component and programming microcontroller 8051 with an assembly language and embedded C to show its desired output on rotating display
-              </p>
-            <p><u> Technology/Software used:</u>   PCB, Embedded C, C++, Proteus, Atmel Studio , Controller-8051</p>
-            
-            
-               
-               
-            </div>
+              </a>
+            </h3>
+            <div class="subheading mb-3">CSE 5290: Artificial Intelligence, Florida Institute of Technology</div>
+            <p>Developed a Convolutional Neural Network (CNN) in PyCharm using machine learning Python libraries, such
+              as scikit-learn that determined the heart abnormalities from different dataset of heart ECG and audio
+              samples that were classified with 96% accuracy.</p>
+            <p><u>Technology/Software used:</u> Sci-kit Learn, NumPy, Pandas, Python, PyCharm</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2018 – December 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Automated Pac-Man with BFS and DFS algorithm implementation&nbsp;
+              <a href="https://github.com/milanoo7/AI-BFS-DFS-Implementation" target="_blank"
+                class="project-title-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </h3>
+            <div class="subheading mb-3">CSE 5290: Artificial Intelligence, Florida Institute of Technology</div>
+            <p>Automated the safest and shortest path finding process to complete the Pac-Man game. Executed
+              breadth-first search and depth-first search algorithm in PyCharm using Python libraries which decreased the
+              completion time by 43%.</p>
+            <p><u>Technology/Software used:</u> PyPI, Python, PyCharm</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">November 2017 – December 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Speechwriter Android Application&nbsp;
+              <a href="https://github.com/milanoo7/Speechwriter-Android-Application" target="_blank"
+                class="project-title-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </h3>
+            <div class="subheading mb-3">ECE 5590: Android Embedded Programming, Florida Institute of Technology</div>
+            <p>Designed an application that converted human speech into a text message with material layout design using
+              speech recognition API and Java integrated IntelliJ IDEA.</p>
+            <p><u>Technology/Software used:</u> SpeechAPI, Material Design, Android Studio, Java</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2018 – April 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Network Traffic Simulator&nbsp;
+              <a href="https://github.com/milanoo7/Network-Traffic-Simulator-" target="_blank"
+                class="project-title-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </h3>
+            <div class="subheading mb-3">ECE 5534: Computer Network, Florida Institute of Technology</div>
+            <p>Designed a graphical simulator in Python to analyze the behavioral characteristics of CSMA protocol under
+              the dynamic network; thus improving the channel utilization and reducing collision done by node.</p>
+            <p><u>Technology/Software used:</u> MATLAB, Tkinter, Python</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2017 - November 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Real-time Object Recognition and Tracking Prototype&nbsp;
+              <a href="https://github.com/milanoo7/object_tracking" target="_blank" class="project-title-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </h3>
+            <div class="subheading mb-3">Project 030070705: Senior Design Project, Uka Tarsadia University</div>
+            <p>Designed a prototype that monitored movements of any objects, including human with 2D coordinates.
+              Configured Raspberry Pi as computing unit with suitable image processing library, such as OpenCV with
+              interfacing webcam on Raspbian OS.</p>
+            <p><u>Technology/Software used:</u> RaspberryPi, PiCamera, OpenCV, C++</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2015 - January 2016</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Student Information Archive&nbsp;
+              <a href="https://github.com/milanoo7/Student-Information-Archive-" target="_blank"
+                class="project-title-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </h3>
+            <div class="subheading mb-3">TH 030070205: Computer Programming, Uka Tarsadia University</div>
+            <p>Designed archive using JavaFX and SQL with graphical design functionality to track all student's
+              credentials and academic records.</p>
+            <p><u>Technology/Software used:</u> JavaFX, Java, C++, SQL</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2015 – May 2015</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Propeller Display using Atmel Controller&nbsp;
+              <a href="https://github.com/milanoo7/Heart-Disease-Classification" target="_blank"
+                class="project-title-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </h3>
+            <div class="subheading mb-3">Project 030070704: Junior Year Project, Uka Tarsadia University</div>
+            <p>Created a new concept of display through persistence of vision fundamental. Took charge of
+              conceptualizing a schematic model of circuit in Proteus simulator and its implementation on PCB by
+              installing hardware component and programming microcontroller 8051 with an assembly language and embedded C
+              to show its desired output on rotating display.</p>
+            <p><u>Technology/Software used:</u> PCB, Embedded C, C++, Proteus, Atmel Studio, Controller-8051</p>
+          </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2016 - May 2017</span>
           </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-        <div class="resume-content">
-          <h3 class="mb-0">Automated Street Light Control Prototype using IoT Protocol </h3>
-          <div class="subheading mb-3"> IoT Intership Project </div>
-          <p> Built a prototype integrated with Arduino, Raspberry-Pi, and ESP8266 as computing device including functionalities based on the concept of IoT and WSN
-            	Developed an android application and website for remote monitoring
-             </p>
-          <p><u> Technology/Software used:</u>   Arduino, RaspberryPi , ESP8266, Embedded C, C++, HTML/CSS, Java, Android Studio, MIT Inventor</p>
-          
-          
-             
-             
-          </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">May 2016-Auguest 2016</span>
         </div>
-    </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Automated Street Light Control Prototype using IoT Protocol</h3>
+            <div class="subheading mb-3">IoT Internship Project</div>
+            <p>Built a prototype integrated with Arduino, Raspberry-Pi, and ESP8266 as computing device including
+              functionalities based on the concept of IoT and WSN. Developed an android application and website for
+              remote monitoring.</p>
+            <p><u>Technology/Software used:</u> Arduino, RaspberryPi, ESP8266, Embedded C, C++, HTML/CSS, Java, Android
+              Studio, MIT Inventor</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May 2016 - August 2016</span>
+          </div>
+        </div>
 
       </div>
-
     </section>
-
-   
 
     <hr class="m-0">
 
@@ -576,102 +672,39 @@ for rapid deployment and scalable operations of business application as well as 
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-java"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-python"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-android"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-r-project"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fas fa-database"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-aws"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-jira"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-raspberry-pi"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-github"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-ubuntu"></i>
-          </li>
-          
-          
-          
-
+          <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+          <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+          <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+          <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+          <li class="list-inline-item"><i class="fab fa-react"></i></li>
+          <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+          <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+          <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+          <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+          <li class="list-inline-item"><i class="fab fa-java"></i></li>
+          <li class="list-inline-item"><i class="fab fa-python"></i></li>
+          <li class="list-inline-item"><i class="fab fa-android"></i></li>
+          <li class="list-inline-item"><i class="fab fa-r-project"></i></li>
+          <li class="list-inline-item"><i class="fas fa-database"></i></li>
+          <li class="list-inline-item"><i class="fab fa-node"></i></li>
+          <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+          <li class="list-inline-item"><i class="fab fa-jira"></i></li>
+          <li class="list-inline-item"><i class="fab fa-raspberry-pi"></i></li>
+          <li class="list-inline-item"><i class="fab fa-github"></i></li>
+          <li class="list-inline-item"><i class="fab fa-ubuntu"></i></li>
         </ul>
 
         <div class="subheading mb-3">Technical Area Explored</div>
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            AWS Cloud infrastructure Setup</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-                  CI/CD Creation on (AWS/AZURE/GCP) &amp; Prometheus logging and Monitoring</li>
-
-                  <li>
-                    <i class="fa-li fa fa-check"></i>
-                  Docker &amp; Kubernetes Environment Implementation </li>
-                  <li>
-              <i class="fa-li fa fa-check"></i>
-        
-              Internet of Things Oriented Research &amp; Embedded Software Testing </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Networking &amp;  Cloud Computing </li>
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  Data Analytics &amp; Visualization</li>
-                  
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Jmeter Website Testing &amp; Debugging</li>
-        
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile and JIRA Development </li>
+          <li><i class="fa-li fa fa-check"></i>AWS Cloud infrastructure Setup</li>
+          <li><i class="fa-li fa fa-check"></i>CI/CD Creation on (AWS/AZURE/GCP) &amp; Prometheus logging and
+            Monitoring</li>
+          <li><i class="fa-li fa fa-check"></i>Docker &amp; Kubernetes Environment Implementation</li>
+          <li><i class="fa-li fa fa-check"></i>Internet of Things Oriented Research &amp; Embedded Software Testing</li>
+          <li><i class="fa-li fa fa-check"></i>Networking &amp; Cloud Computing</li>
+          <li><i class="fa-li fa fa-check"></i>Data Analytics &amp; Visualization</li>
+          <li><i class="fa-li fa fa-check"></i>Jmeter Website Testing &amp; Debugging</li>
+          <li><i class="fa-li fa fa-check"></i>Agile and JIRA Development</li>
         </ul>
       </div>
     </section>
@@ -679,80 +712,74 @@ for rapid deployment and scalable operations of business application as well as 
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
-        <div class="w-100">
-            <h2 class="mb-5">Publications</h2>
-            <ul>
-                <li>
-          &nbsp;  M.Patel, S.Bhattacharyya &amp; A.Alfageeh  <a href = "https://ieeexplore.ieee.org/document/8992954" download="certificate.pdf"    > "Formal Trust Architecture for Assuring Trusted
-            Interactions in the Internet of Things," in IEEE-UEMCON, 2019,  </a> eCF Paper Id: 1570575494. </li>
-        <li> 
-         &nbsp;  M.Patel, S.Bhattacharyya, A.Alfageeh &amp; Samuel Perl <a href ="https://ieeexplore.ieee.org/document/8992971" download="certificate(1).pdf"> "Assurance for CyberSecurity with
-          Assume-Guarantee Reasoning,"in&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; IEEE-UEMCON, 2019,</a>  eCF Paper Id: 1570575746. </li>
-          <li> 
-            &nbsp;  M.Patel, B.Mathew &amp; V.Tumala  <a href ="#" download="IEEE UEMCON Milan Paper presentation 2.pdf"> " Using Classification Algorithm Classify Heart Abnormality From Heart(ECG) Rhythms ,"in&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Artificial Intelligence in Medicine Journal By Elsevier,</a>  Ref: AIIM_2019_934. </li>
-             
-        <li>
-        Thesis: &nbsp;  Milankumar Patel <a href = "https://repository.lib.fit.edu/handle/11141/2812" target="_blank">"Formal Trust Architecture for Assuring Trusted
-          Interactions in the Internet of Things," Submitted Florida Institute of Technology</a>, 2019.
-        </li>
-
-
-            </ul>
-        </div>
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+        <ul>
+          <li>M.Patel, S.Bhattacharyya &amp; A.Alfageeh
+            <a href="https://ieeexplore.ieee.org/document/8992954" target="_blank">"Formal Trust Architecture for
+              Assuring Trusted Interactions in the Internet of Things," in IEEE-UEMCON, 2019,</a>
+            eCF Paper Id: 1570575494.
+          </li>
+          <li>M.Patel, S.Bhattacharyya, A.Alfageeh &amp; Samuel Perl
+            <a href="https://ieeexplore.ieee.org/document/8992971" target="_blank">"Assurance for CyberSecurity with
+              Assume-Guarantee Reasoning," in IEEE-UEMCON, 2019,</a>
+            eCF Paper Id: 1570575746.
+          </li>
+          <li>M.Patel, B.Mathew &amp; V.Tumala
+            <a href="#">"Using Classification Algorithm Classify Heart Abnormality From Heart(ECG) Rhythms," in
+              Artificial Intelligence in Medicine Journal By Elsevier,</a>
+            Ref: AIIM_2019_934.
+          </li>
+          <li>Thesis: Milankumar Patel
+            <a href="https://repository.lib.fit.edu/handle/11141/2812" target="_blank">"Formal Trust Architecture for
+              Assuring Trusted Interactions in the Internet of Things," Submitted Florida Institute of Technology</a>,
+            2019.
+          </li>
+        </ul>
+      </div>
     </section>
+
     <hr class="m-0">
+
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
-            <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            AWS Certified Solutions Architect – Associate | Validation No: EVRV0H6131B418GW |  http://aws.amazon.com/verification </li>
-          <li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Cisco Certified Network Associate (CCNA) – Switching and Routing | ID No: 432946442826AQDL , July 2018</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Bootcamp on Android Development conducted by, AcadGild(Google Affiliated): Dec 2018</li>
-          <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              R Programming Course by, DataCamp.: Jan 2018</li>
-  
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Sun InfoTech Certified Network Associate, System Administrator (RHCSA), May 2018</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            
-            Completed training on AWS Certified Solution Architect conducted by Zoom Technologies, March 2018</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Scholarship offered by Florida Institute of Technology worth of $8000</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-           
-            Google Developer Challenge Scholarship, Google, Dec 2017</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Won Silver Medal in University-level basketball game and cricket </li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>AWS Certified Solutions Architect – Associate | Validation
+            No: EVRV0H6131B418GW | http://aws.amazon.com/verification</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>Cisco Certified Network Associate (CCNA) – Switching and
+            Routing | ID No: 432946442826AQDL, July 2018</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>Bootcamp on Android Development conducted by,
+            AcadGild(Google Affiliated): Dec 2018</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>R Programming Course by, DataCamp.: Jan 2018</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>Sun InfoTech Certified Network Associate, System
+            Administrator (RHCSA), May 2018</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>Completed training on AWS Certified Solution Architect
+            conducted by Zoom Technologies, March 2018</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>Scholarship offered by Florida Institute of Technology
+            worth of $8000</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>Google Developer Challenge Scholarship, Google, Dec 2017
+          </li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>Won Silver Medal in University-level basketball game and
+            cricket</li>
         </ul>
       </div>
-      
     </section>
+
+    <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a Software Developer, I enjoy working out and playing basketball and cricket. I am an avid wanderlust . During the warmer and cold months here in Florida, I enjoy surfing, beach reading , and kayaking.</p>
-        <p class="mb-0">When I am home, I spend most of my spare time reading about different things like Self-development, Invesment strategies in Stocks, Food cuisines, Poetry and Sports. Also, I am an aspiring chef who can cook six different cuisines. F requently, I keep myself updated about latest technology advancements and software release by reviewing Toms'Guide, Electronics4U, NYTimes.</p>
+        <p>Apart from being a Software Developer, I enjoy working out and playing basketball and cricket. I am an avid
+          wanderlust. During the warmer and cold months here in Florida, I enjoy surfing, beach reading, and kayaking.
+        </p>
+        <p class="mb-0">When I am home, I spend most of my spare time reading about different things like
+          Self-development, Investment strategies in Stocks, Food cuisines, Poetry and Sports. Also, I am an aspiring
+          chef who can cook six different cuisines. Frequently, I keep myself updated about latest technology
+          advancements and software release by reviewing Toms'Guide, Electronics4U, NYTimes.</p>
       </div>
     </section>
-  
-  
-
-
-  
 
   </div>
 
@@ -769,3 +796,4 @@ for rapid deployment and scalable operations of business application as well as 
 </body>
 
 </html>
+
