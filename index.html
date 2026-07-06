@@ -10,12 +10,15 @@
   <title>Milan's Portfolio</title>
   <link rel="icon" type="image/ico" href="https://img.icons8.com/emoji/20/000000/man-technologyst.png">
 
+  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
   <style>
@@ -189,7 +192,7 @@
           <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          <a class="nav-link js-scroll-trigger" href="#skills">Technical Acumen</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
@@ -213,9 +216,13 @@
         <h1 class="mb-0">Milan
           <span class="text-primary">Patel</span>
         </h1>
+        
+        <div class="subheading mb-2" style="font-size: 1.2rem; font-weight: 700; color: #868e96;">
+           Cloud Support Engineer | Technical Account Manager | Domain Specialist Engineer
+        </div>
 
         <div class="subheading mb-5 contact-info">
-          <img src="https://img.icons8.com/ios/30/000000/order-delivered.png" alt="Location"> Atlanta GA 30306 ·
+          <img src="https://img.icons8.com/ios/30/000000/order-delivered.png" alt="Location"> Atlanta GA 30360 ·
           <img src="https://img.icons8.com/ios/30/000000/phone.png" alt="Phone"> 321-831-8129 ·&nbsp;
           <img src="https://img.icons8.com/ios/30/000000/send-mass-email.png" alt="Email">
           <a href="mailto:pmilan5410@gmail.com">pmilan5410@gmail.com</a> /
@@ -223,13 +230,15 @@
         </div>
 
         <p class="lead mb-5" style="text-align:justify;">
-          I build, break, and fix cloud infrastructure for a living. I am a hardworking engineer who has been diving deep into AWS since 2019, long before Generative AI became an industry standard. I've never been afraid to read through thousands of pages of documentation, parse complex blog posts, and master the core concepts the hard way to deliver the utmost value for customers spending on AWS. Over the last three years, as LLMs have transformed the IT landscape, I've cultivated an agentic AI tooling expertise. I leverage these tools to efficiently navigate information and serve customers with highly accurate solutions, building trust without ever compromising on security, reliability, resiliency, or cost optimization.
-          <br><br>
-          Most recently, I served as a Domain Specialist Engineer at Amazon Web Services, where I owned >$20M ARR enterprise accounts and architected containerized workloads on ECS and EKS at scale. My biggest flex? I wrote the <a href="https://github.com/aws-samples/eks-pod-information-collector" target="_blank">EKS Pod Information Collector (EPIC)</a> — an open-source troubleshooting script that's become a go-to tool for 5,000+ AWS customers and internal teams when things go sideways in Kubernetes.
-          <br><br>
-          Before AWS, I was the person keeping the lights on for 10,000+ restaurant POS systems at Revel Systems — building Terraform modules with automated drift detection, wiring up CI/CD pipelines, and getting paged at 2 AM when production decided to have opinions. I've shipped infrastructure across AWS, Azure, and GCP, automated everything I could get my hands on (Bash, Python, Ansible, Terraform), and built full-stack apps when the situation called for it.
-          <br><br>
-          I hold an AWS Solutions Architect – Professional certification, along with AWS AI Practitioner and Generative AI credentials. I have a Master's in Engineering Management from Trine University, a Master's in Computer Engineering from Florida Tech, and two IEEE-published papers on IoT security and trust architectures. I like solving hard problems, automating the boring stuff, and making cloud infrastructure that doesn't wake people up at night.
+          I build, break, and fix cloud infrastructure for a living — where I help enterprise customers architect and troubleshoot containerized workloads on ECS and EKS at scale. 
+
+My biggest flex? I wrote the <a href="https://github.com/aws-samples/eks-pod-information-collector" target="_blank">EKS Pod Information Collector (EPIC)</a> — an open-source troubleshooting script that's become a go-to tool for 5,000+ AWS customers and internal teams when things go sideways in Kubernetes. 
+
+Before AWS, I was the person keeping the lights on for 10,000+ restaurant POS systems at Revel Systems — building Terraform modules, wiring up CI/CD pipelines with security gates, and getting paged at 2 AM when production decided to have opinions. I've shipped infrastructure across AWS, Azure, and GCP, automated everything I could get my hands on (Bash, Python, Ansible, Terraform), and built full-stack apps when the situation called for it. 
+
+I'm AWS Solutions Architect – Professional certified, AI Practitioner certified, and hold knowledge badges in EKS, ECS, Networking, Amazon Q Developer, and Generative AI. I have a Master's in Computer Engineering from Florida Tech, an MBA in Engineering Management from Trine University, and two IEEE-published papers on IoT security and trust architectures. 
+
+I like solving hard problems, automating the boring stuff, and making cloud infrastructure that doesn't wake people up at night.
         </p>
 
         <div class="social-icons">
@@ -354,41 +363,48 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Domain Specialist Engineer (DSE)</h3>
-            <div class="subheading mb-3">Amazon Web Services (AWS), Atlanta, GA, USA</div>
-            <p>• Served as primary Domain Specialist Engineer in EKS and ECS, acting as the single-threaded owner for large/high-complexity Telco, ISV, and Healthcare customers (>$20M ARR).</p>
-            <p>• Maintained deep ownership of customer workloads, architecture, and context across ECS, EKS, ECR, Fargate, and AWS Batch while conducting proactive workload reviews to identify risks and optimization opportunities.</p>
-            <p>• Built and maintained the Comprehensive Workload Review (CWR) runbooks and escalation frameworks. This 15-phase structured framework was adopted across all UOps enterprise customers as a single source of truth for proactive, context-aware cloud guidance covering observability, resiliency, incident response, and continuous improvement.</p>
-            <p>• Provided escalation and standby support during Sev5-1 production outages and C-Suite escalations: invoked the CPR process, engaged internal service teams on priority, activated PVS Ops on-call within 30 minutes, and drove timely RCA delivery with proactive stakeholder communication.</p>
-            <p>• Delivered proactive and reactive support for assigned Enterprise support customers, combining deep workload context with cross-team collaboration to reduce discovery time and lower production risk.</p>
+            <div class="subheading mb-3">Amazon Web Services (AWS), Atlanta GA, USA</div>
+            <p>• Served as primary Domain Specialist Engineer in EKS (Elastic Kubernetes Service) and ECS (Elastic Container Service) and single-threaded owner for large/high-complexity Telco, ISV, and Healthcare customers (>20M ARR), maintaining deep ownership of customer workloads, architecture, and context across ECS, EKS, ECR, Fargate, and AWS Batch while conducting proactive workload reviews to identify risks and optimization opportunities.</p>
+            <p>• Acted as key Point of Contact (POC) between Unified Operations (UOps) Telco team and Account teams (TAMS/SAs); established recurring cadence calls to align on upcoming changes, capture missed updates, and ensure ongoing synchronization of customer architecture, AWS footprint, and runbook data.</p>
+            <p>• Developed and maintained Critical Workload Review (CWR) runbooks, architecture documentation, and escalation frameworks for AWS Enterprise Support customers — adopted across all UOps enterprise customers as a single source of truth for proactive, context-aware cloud guidance across 15 structured phases covering workload discovery, observability, resiliency, incident response, and continuous improvement.</p>
+            <p>• Provided escalation and standby support during critical outage and business-critical migration events, including Sev1/P1 production outages, C-Suite escalations, and Andon Cord events: invoked CPR process, engaged internal service teams on priority, activated PVS Ops on-call within 30 minutes, coordinated customer engagement, and drove timely RCA delivery with proactive stakeholder communication.</p>
+            <p>• Delivered proactive and reactive support for all assigned Enterprise Support customers, combining deep customer workload context with structured cross-team collaboration to reduce discovery time, improve MTTR, and lower production risk across multiple enterprise subscribers.</p>
+            <p>• Hold AWS Certified Solutions Architect Professional along with AWS AI Practitioner and Generative AI certifications, applied directly to customer architecture decisions and workload guidance.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Apr 2025 - Present</span>
+            <span class="text-primary">April 2025 - Present</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Technical Account Manager (TAM)</h3>
-            <div class="subheading mb-3">Amazon Web Services (AWS), Atlanta, GA, USA</div>
-            <p>• Owned end-to-end cloud transformation journeys for a portfolio of 5-10 high-value enterprise accounts, developing tailored Strategic Support Plans (SSPs) and presenting quantified impact through Strategic Business Reviews (SBRs) to C-suite stakeholders.</p>
-            <p>• Led strategic engagements including Architecture Reviews, Countdown go-live events, and operational health assessments for enterprise customers running critical production workloads on EKS, ECS, and Fargate.</p>
-            <p>• Managed Key Customer Issues (KCIs) and escalations across complex multi-service environments, mitigating critical risks (security vulnerabilities, resilience gaps, EOL workloads) before customer impact.</p>
-            <p>• Advocated for customer needs internally by driving feature requests (PFRs) and influencing AWS service roadmaps based on recurring customer patterns.</p>
+            <div class="subheading mb-3">Amazon Web Services (AWS), Atlanta GA, USA</div>
+            <p>• Owned end-to-end cloud transformation journeys for a portfolio of 5-10 high-value enterprise accounts, developing tailored Strategic Support Plans (SSPs) and roadmaps aligned to business outcomes, and presenting quantified impact through Strategic Business Reviews (SBRs) to C-suite and executive stakeholders.</p>
+            <p>• Proactively identified and mitigated critical risks security vulnerabilities, resilience gaps, EOL workloads, and cost inefficiencies before customer impact, while advocating for customer needs internally by driving feature requests (PFRs) and leading cross-functional initiatives across engineering, product, and service teams.</p>
+            <p>• Led strategic engagements including Architecture Reviews, Countdown go-live events, and operational health assessments for enterprise customers running critical production workloads on EKS, ECS, and Fargate translating complex technical findings into clear business risk language for both engineering teams and executive audiences.</p>
+            <p>• Partnered with Solutions Architects, Account Managers, Support Engineers, and AWS Service teams to plan customer launches, guide escalations end-to-end, and maintain customer momentum through proactive technical guidance and cross-team collaboration across multiple concurrent workstreams.</p>
+            <p>• Managed Key Customer Issues (KCIs) and escalations across complex multi-service enterprise environments, accelerating cloud adoption by removing blockers, influencing AWS service roadmaps based on recurring customer patterns, and sustaining trusted advisor relationships that drove measurable business transformation.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Dec 2023 - Mar 2025</span>
+            <span class="text-primary">Dec 2023 - March 2025</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Cloud Support Engineer</h3>
-            <div class="subheading mb-3">Amazon Web Services (AWS), Atlanta, GA, USA</div>
-            <p>• Supported 3,000+ global enterprise customers and resolved over 3,000 cases, swiftly diagnosing and resolving escalated infrastructure issues across ECS, Fargate, ECR, EKS, Batch, AppMesh, VPC, and Cognito.</p>
-            <p>• Led end-to-end resolution of 500+ Sev1/P1 production incidents across enterprise EKS, ECS, Fargate, and ECR workloads, coordinating with engineering teams to restore business-critical operations under extreme pressure.</p>
-            <p>• Developed and maintained the open-source EKS Pod Information Collector (EPIC) script, adopted by 5,000+ AWS customers and internal teams, significantly accelerating root cause analysis for Kubernetes workloads.</p>
-            <p>• Guided several large enterprise customers through complex on-premises to AWS cloud migrations involving critical production container workloads, owning architecture recommendations and go-live support.</p>
-            <p>• Rated "Above Bar" in every annual performance evaluation over a 4+ year tenure.</p>
+            <div class="subheading mb-3">Amazon Web Services (AWS), Atlanta GA, USA</div>
+            <p>• Worked with global enterprise AWS customers on complex issues relating to AWS services like AWS Elastic container service (ECS), Fargate, ECR, Elastic Kubernetes Service (EKS), Batch, AppMesh, CodeBuild, CodeCommit, VPC, EBS, Lambda, ALB, Cognito to swiftly diagnose and resolve escalated infrastructure issues to ensure seamless business operations and rapid deployments.</p>
+            <p>• Led end-to-end resolution of 500+ Sev1/P1 production incidents across enterprise EKS, ECS, Fargate, and ECR workloads, coordinating customer engineering teams, AWS service teams, and internal stakeholders simultaneously to restore business-critical operations under extreme pressure.</p>
+            <p>• Developed and maintained the open-source EKS Pod Information Collector (EPIC) script, adopted by 5,000+ AWS customers and internal teams, significantly accelerating root cause analysis and troubleshooting for Kubernetes workloads.</p>
+            <p>• Led technical migrations of on-premises applications to AWS Cloud, providing architecture guidance, post-migration support, and cost optimization strategies to maximize operational efficiency and customer adoption.</p>
+            <p>• Mentored and onboarded new support engineers, conducting structured technical training and workflow sessions. Written internal Blogpost and troubleshooting articles that elevated team troubleshooting productivity and improved service level onboarding effectiveness.</p>
+            <p>• Collaborated cross-functionally with Customer's TAM, product teams, Solutions Architect to resolve high-stakes incidents, drive process improvements, and deliver customer-driven enhancements to AWS services.</p>
+            <p>• Proactively identified and mitigated infrastructure risks EOL versions, security misconfigurations, resilience gaps, and networking vulnerabilities before customer impact across 1,000+ enterprise engagements spanning finance, healthcare, e-commerce, and SaaS.</p>
+            <p>• Guided several large enterprise customers through complex on-premises to AWS cloud migrations involving critical production container workloads, owning architecture recommendations, risk mitigation, and go-live support end-to-end.</p>
+            <p>• Developed 300-400 level expertise across the full AWS container ecosystem including Kubernetes networking, cluster lifecycle management, multi-tenant architecture, IRSA, autoscaling, CI/CD integration, and cost optimization resolving 3,000+ cases over four years and building pattern recognition across failure modes at scale.</p>
+            <p>• Earned formal recognition multiple times from customers and leadership for technical advisory impact; built internal runbooks and mentored junior engineers, scaling individual expertise into organization-wide capability.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Oct 2021 - Dec 2023</span>
@@ -397,12 +413,15 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Cloud Operations Engineer</h3>
-            <div class="subheading mb-3">Revel Systems, Atlanta, GA, USA</div>
-            <p>• Managed the AWS cloud infrastructure for Revel POS systems handling 10,000+ restaurant Point of Sale workloads in a strict PCI-Compliance environment.</p>
-            <p>• Wrote IaC modules using Terraform and built automated Terraform Drift detection during infrastructure deployments to instantly notify the team of abnormalities via Slack.</p>
-            <p>• Integrated BlackDuck and SonarQube with GitLab CI/CD to track code quality and vulnerabilities during deployments.</p>
-            <p>• Maintained and monitored GitLab pipeline jobs on-prem runners on EKS clusters, configured Vault and KMS for secure credential storage, and managed Real-time Incident tracking using DataDog, CloudTrail, and PagerDuty.</p>
+            <h3 class="mb-0">Cloud-Operations Engineer</h3>
+            <div class="subheading mb-3">Revel Systems Inc, Atlanta GA, USA</div>
+            <p>• Daily duties include writing IaC modules using Terraform, create monitoring dashboard using DataDog and NewRelic. Building ShellScripts, PythonScript and Ansible playbook to automate the deployment of applications through GitLab CI/CD on AWS.</p>
+            <p>• Included Automated Terraform Drift detection during the aws infrastructure deployment to get notified with the change/abnormality immediately on Slack. Followed PCI-Compliance Guidelines to protect Prod Infrastructure.</p>
+            <p>• Integrated BlackDuck and SonarQube with GitLab CI/CD to check and keep track of the code quality and vulnerabilities during the deployments. Scripted an automated CI/CD flow to Containerized the application using Docker and Deploy it onto ECS and EKS cluster.</p>
+            <p>• Maintained and monitor GitLab pipeline jobs on-prem runners on EKS cluster and implemented new functionality using Helm charts. Configured Vault and KMS with EKS to store env artifact and credentials securely.</p>
+            <p>• Configured AWS Infrastructure Alerts using DataDog, CloudTrail and PagerDuty for Real-time Incident tracking.</p>
+            <p>• Created customized Terraformed IaC Modules for RDS, ECS, EKS and AWS Lambda to deploy resources and included real-time monitoring metrics for all the resources using DataDog provider.</p>
+            <p>• Well-Experienced in being On-CALL and have handled critical production level real-time incident with AWS infrastructure that handles 10K restaurants Point of sale work-load.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Dec 2020 - Oct 2021</span>
@@ -413,10 +432,11 @@
           <div class="resume-content">
             <h3 class="mb-0">DevOps Engineer</h3>
             <div class="subheading mb-3">Miracle Software System, Duluth, GA, USA</div>
-            <p>• Built and managed the AWS cloud infrastructure of an E-Commerce website and Supply/Chain production environment.</p>
-            <p>• Configured automated Azure DevOps CI/CD flows to update serverless Lambda Functions with new code releases, and managed SQS queues/S3 buckets for online order management.</p>
-            <p>• Created multi-AZ VPC networks and VPC Peering with security groups and Firewall Rules, configuring TGW-Gateways on AWS.</p>
-            <p>• Created an EKS cluster and deployed Python applications alongside DataDog Log forwarders for Pod Monitoring. Configured CloudWatch and Prometheus for EC2 instance monitoring.</p>
+            <p>• Built and Managed AWS cloud infrastructure of E-Commerce website and Supply/Chain production Env.</p>
+            <p>• Configured automated Azure Devops CI/CD flow to Update serverless Lambda Function with new code release, Configured Backend APIs performance monitoring with DataDog, CloudFront for UI deployment, SQS queue/S3 bucket for online order management.</p>
+            <p>• Created multi-AZ VPC networks and VPC Peering with security groups and Firewall Rules, configured TGW-Gateways on AWS. Configured data communication between internal applications using networking protocols namely TCP/IP, REST API, DNS, and SSH.</p>
+            <p>• Created EKS cluster and deployed python application and DataDog Log forwarder for Pod Monitoring. Configured CloudWatch and Prometheus for monitoring EC2 instances and imported the log files to Cloud storage buckets in S3.</p>
+            <p>• Built a Jenkins Pipelines to deploy Nodejs and Python application to AWS.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Nov 2019 - Dec 2020</span>
@@ -428,9 +448,9 @@
             <h3 class="mb-0">Full-Stack Developer</h3>
             <div class="subheading mb-3">Aeronyde Corporation, Melbourne, FL, USA</div>
             <p>• Programmed a dashboard portal using web development technologies like ReactJS, NodeJS, JavaScript and MySQL for drone-user community.</p>
-            <p>• Created AWS cloud deployment and RDS database architecture environments for the SkySync project.</p>
-            <p>• Built CI/CD pipelines on AWS CodePipeline to automate deployments to S3 storage buckets.</p>
-            <p>• Created Security Groups, IAM users/groups, and VPCs on AWS to isolate and control traffic to Production EC2 instances.</p>
+            <p>• Created AWS cloud deployment and RDS database architecture env for SkySync project.</p>
+            <p>• Created Security Groups, IAM user/group and VPC on AWS which behaved as virtual cloud to isolate and control the traffic allowed to reach one or more Production AWS EC2 instances.</p>
+            <p>• Built CI/CD pipelines on AWS code Pipeline, for applications to automate the Deployment to S3 storage buckets on AWS.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">May 2019 - Nov 2019</span>
@@ -441,9 +461,8 @@
           <div class="resume-content">
             <h3 class="mb-0">Embedded Engineer</h3>
             <div class="subheading mb-3">Tatvamasi Automation Solutions, Surat, GJ, India</div>
-            <p>• Optimized several embedded automation tools, such as Scala and programmable logic controller (PLC) to automate actuators; Programed PLC components using embedded C and assembly language.</p>
-            <p>• Keenly performed testing, troubleshooting and installation of software on automation devices over software defined networking (SDN) platform.</p>
-            <p>• Designed Technical Documentation and Used Proteus to design circuit schematics of actuators.</p>
+            <p>• Optimize several embedded automation tools, such as Scala and programmable logic controller (PLC) to automate actuators; Programed PLC components using embedded C and assembly language. </p>
+            <p>• Keenly performed testing, troubleshooting and installation of software on automation devices over software defined networking (SDN) platform. Designed Technical Documentation and Used Proteus to design circuit schematics of actuators.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2016 - May 2017</span>
@@ -455,8 +474,7 @@
             <h3 class="mb-0">IoT Internship</h3>
             <div class="subheading mb-3">ExpertsHub Industry Skill Development Center, Bangalore, KA, India</div>
             <p>• Conducted critical research on various network protocol and remote sensors to create smart prototype on different computing platforms, such as Arduino UNO and Raspberry Pi.</p>
-            <p>• Optimized Java functionality in development of smart streetlight monitoring prototype to reduce energy consumption.</p>
-            <p>• Implemented remote monitoring through a local host website built using HTML/CSS, C++, and Android application.</p>
+            <p>• Optimized Java functionality in development of smart streetlight monitoring prototype to reduce energy consumption. Implemented remote monitoring through a local host website built using HTML/CSS, C++, and Android application.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">May 2016 - August 2016</span>
@@ -490,57 +508,41 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">BNP (Baby name prediction) application using Python, Scikit-learn and big query
-              framework&nbsp;
-              <a href="https://github.com/milanoo7/" target="_blank" class="project-title-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </h3>
-            <div class="subheading mb-3">Miracle Software Systems</div>
-            <p>Developed a machine learning model using technologies like python, big query, Sklearn to predict the
-              popular name in the future with its gender. Datasets were classified with 57% accuracy.</p>
-            <p><u>Technology/Software used:</u> Sci-kit Learn, NumPy, Pandas, Python, PyCharm</p>
+            <h3 class="mb-0">Revel Cloud-POS System's AWS Cloud Infrastructure</h3>
+            <div class="subheading mb-3">Used By Over 10K Restaurant Clients Worldwide</div>
+            <p>Engineered and maintained the cloud architecture to handle extensive point of sale workloads securely.</p>
+            <p><u>Technology/Software used:</u> GitLab CI/CD, CircleCI, Docker, Python, Kubernetes, Lambda, Ansible, iOS, Terraform, AWS</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Jan 2020 – Present</span>
+            <span class="text-primary">2020 - 2021</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Automated the pipeline creation between Jenkins and Github using Shell-Script and
-              AWS&nbsp;
-              <a href="https://github.com/milanoo7/" target="_blank" class="project-title-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </h3>
+            <h3 class="mb-0">Established AWS and Azure DevOps Cloud Infrastructure for Ecommerce Web</h3>
             <div class="subheading mb-3">Miracle Software Systems</div>
-            <p>Integrated Github and Jenkins using webhook to automated the build process. Run a shell script to create
-              and configure Jenkins jobs in EC2 instance.</p>
-            <p><u>Technology/Software used:</u> Jenkins, GitHub, AWS EC2, ShellScript</p>
+            <p>Designed the foundational multi-cloud architecture and pipelines to support dynamic ecommerce traffic flows.</p>
+            <p><u>Technology/Software used:</u> Azure DevOps CI/CD, Docker, Serverless API, Kubernetes, Lambda, Cognito, S3, SES, SQS</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Dec 2019 – Jan 2020</span>
+            <span class="text-primary">2019 - 2020</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">CRM (Customer relationship management) application using Spring framework and
-              ReactJS&nbsp;
+            <h3 class="mb-0">CI-CD Automated Shell-Scripted Integration&nbsp;
               <a href="https://github.com/milanoo7/" target="_blank" class="project-title-link">
                 <i class="fab fa-github"></i>
               </a>
             </h3>
             <div class="subheading mb-3">Miracle Software Systems</div>
-            <p>Developed a backend of an application in Spring framework using Java 8 to keep tracks of employee with
-              all the necessary details. It has all the CRUD functionality. Front-end of the application is designed in a
-              ReactJS library with a material design.</p>
-            <p><u>Technology/Software used:</u> Java, Spring Boot Framework, Hibernate, JPA, MySQL, Spring Boot Dev
-              tool, ReactJS, JavaScript, REST, Tomcat, Eclipse</p>
+            <p>Integrated Github and Jenkins using webhook to automated the build process. Run a shell script to create and configure Jenkins jobs in EC2 instance.</p>
+            <p><u>Technology/Software used:</u> GitHub, Kubernetes, Python, Docker, Jenkins, PowerShell, AWS EC2, Unix Scripting</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Dec 2019 – Jan 2020</span>
+            <span class="text-primary">2019 - 2020</span>
           </div>
         </div>
 
@@ -553,13 +555,11 @@
               </a>
             </h3>
             <div class="subheading mb-3">CSE 5290: Artificial Intelligence, Florida Institute of Technology</div>
-            <p>Developed a Convolutional Neural Network (CNN) in PyCharm using machine learning Python libraries, such
-              as scikit-learn that determined the heart abnormalities from different dataset of heart ECG and audio
-              samples that were classified with 96% accuracy.</p>
+            <p>Developed a Convolutional Neural Network (CNN) in PyCharm using machine learning Python libraries, such as scikit-learn that determined the heart abnormalities from different dataset of heart ECG and audio samples that were classified with 96% accuracy.</p>
             <p><u>Technology/Software used:</u> Sci-kit Learn, NumPy, Pandas, Python, PyCharm</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2018 – December 2018</span>
+            <span class="text-primary">Aug 2018 – Dec 2018</span>
           </div>
         </div>
 
@@ -572,123 +572,13 @@
               </a>
             </h3>
             <div class="subheading mb-3">CSE 5290: Artificial Intelligence, Florida Institute of Technology</div>
-            <p>Automated the safest and shortest path finding process to complete the Pac-Man game. Executed
-              breadth-first search and depth-first search algorithm in PyCharm using Python libraries which decreased the
-              completion time by 43%.</p>
+            <p>Automated the safest and shortest path finding process to complete the Pac-Man game. Executed breadth-first search and depth-first search algorithm in PyCharm using Python libraries which decreased the completion time by 43%.</p>
             <p><u>Technology/Software used:</u> PyPI, Python, PyCharm</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">November 2017 – December 2017</span>
+            <span class="text-primary">Nov 2017 – Dec 2017</span>
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Speechwriter Android Application&nbsp;
-              <a href="https://github.com/milanoo7/Speechwriter-Android-Application" target="_blank"
-                class="project-title-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </h3>
-            <div class="subheading mb-3">ECE 5590: Android Embedded Programming, Florida Institute of Technology</div>
-            <p>Designed an application that converted human speech into a text message with material layout design using
-              speech recognition API and Java integrated IntelliJ IDEA.</p>
-            <p><u>Technology/Software used:</u> SpeechAPI, Material Design, Android Studio, Java</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2018 – April 2018</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Network Traffic Simulator&nbsp;
-              <a href="https://github.com/milanoo7/Network-Traffic-Simulator-" target="_blank"
-                class="project-title-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </h3>
-            <div class="subheading mb-3">ECE 5534: Computer Network, Florida Institute of Technology</div>
-            <p>Designed a graphical simulator in Python to analyze the behavioral characteristics of CSMA protocol under
-              the dynamic network; thus improving the channel utilization and reducing collision done by node.</p>
-            <p><u>Technology/Software used:</u> MATLAB, Tkinter, Python</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2017 - November 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Real-time Object Recognition and Tracking Prototype&nbsp;
-              <a href="https://github.com/milanoo7/object_tracking" target="_blank" class="project-title-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </h3>
-            <div class="subheading mb-3">Project 030070705: Senior Design Project, Uka Tarsadia University</div>
-            <p>Designed a prototype that monitored movements of any objects, including human with 2D coordinates.
-              Configured Raspberry Pi as computing unit with suitable image processing library, such as OpenCV with
-              interfacing webcam on Raspbian OS.</p>
-            <p><u>Technology/Software used:</u> RaspberryPi, PiCamera, OpenCV, C++</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2015 - January 2016</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Student Information Archive&nbsp;
-              <a href="https://github.com/milanoo7/Student-Information-Archive-" target="_blank"
-                class="project-title-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </h3>
-            <div class="subheading mb-3">TH 030070205: Computer Programming, Uka Tarsadia University</div>
-            <p>Designed archive using JavaFX and SQL with graphical design functionality to track all student's
-              credentials and academic records.</p>
-            <p><u>Technology/Software used:</u> JavaFX, Java, C++, SQL</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2015 – May 2015</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Propeller Display using Atmel Controller&nbsp;
-              <a href="https://github.com/milanoo7/Heart-Disease-Classification" target="_blank"
-                class="project-title-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </h3>
-            <div class="subheading mb-3">Project 030070704: Junior Year Project, Uka Tarsadia University</div>
-            <p>Created a new concept of display through persistence of vision fundamental. Took charge of
-              conceptualizing a schematic model of circuit in Proteus simulator and its implementation on PCB by
-              installing hardware component and programming microcontroller 8051 with an assembly language and embedded C
-              to show its desired output on rotating display.</p>
-            <p><u>Technology/Software used:</u> PCB, Embedded C, C++, Proteus, Atmel Studio, Controller-8051</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2016 - May 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Automated Street Light Control Prototype using IoT Protocol</h3>
-            <div class="subheading mb-3">IoT Internship Project</div>
-            <p>Built a prototype integrated with Arduino, Raspberry-Pi, and ESP8266 as computing device including
-              functionalities based on the concept of IoT and WSN. Developed an android application and website for
-              remote monitoring.</p>
-            <p><u>Technology/Software used:</u> Arduino, RaspberryPi, ESP8266, Embedded C, C++, HTML/CSS, Java, Android
-              Studio, MIT Inventor</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2016 - August 2016</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -696,25 +586,19 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5">Technical Acumen</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
+        <ul class="list-inline dev-icons mb-4">
           <li class="list-inline-item"><i class="fab fa-html5"></i></li>
           <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
           <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
           <li class="list-inline-item"><i class="fab fa-angular"></i></li>
           <li class="list-inline-item"><i class="fab fa-react"></i></li>
           <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-          <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-          <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
           <li class="list-inline-item"><i class="fab fa-npm"></i></li>
           <li class="list-inline-item"><i class="fab fa-java"></i></li>
           <li class="list-inline-item"><i class="fab fa-python"></i></li>
-          <li class="list-inline-item"><i class="fab fa-android"></i></li>
-          <li class="list-inline-item"><i class="fab fa-r-project"></i></li>
-          <li class="list-inline-item"><i class="fas fa-database"></i></li>
-          <li class="list-inline-item"><i class="fab fa-node"></i></li>
           <li class="list-inline-item"><i class="fab fa-aws"></i></li>
           <li class="list-inline-item"><i class="fab fa-jira"></i></li>
           <li class="list-inline-item"><i class="fab fa-raspberry-pi"></i></li>
@@ -722,18 +606,21 @@
           <li class="list-inline-item"><i class="fab fa-ubuntu"></i></li>
         </ul>
 
-        <div class="subheading mb-3">Technical Area Explored</div>
-        <ul class="fa-ul mb-0">
-          <li><i class="fa-li fa fa-check"></i>AWS Cloud infrastructure Setup</li>
-          <li><i class="fa-li fa fa-check"></i>CI/CD Creation on (AWS/AZURE/GCP) &amp; Prometheus logging and
-            Monitoring</li>
-          <li><i class="fa-li fa fa-check"></i>Docker &amp; Kubernetes Environment Implementation</li>
-          <li><i class="fa-li fa fa-check"></i>Internet of Things Oriented Research &amp; Embedded Software Testing</li>
-          <li><i class="fa-li fa fa-check"></i>Networking &amp; Cloud Computing</li>
-          <li><i class="fa-li fa fa-check"></i>Data Analytics &amp; Visualization</li>
-          <li><i class="fa-li fa fa-check"></i>Jmeter Website Testing &amp; Debugging</li>
-          <li><i class="fa-li fa fa-check"></i>Agile and JIRA Development</li>
-        </ul>
+        <div class="subheading mb-3">Languages &amp; Scripting</div>
+        <p class="mb-4">JavaScript, Python, Java, C++, C, HTML, CSS, SWRL, Assembly, MATLAB, Shell Script, Bash</p>
+
+        <div class="subheading mb-3">AWS Ecosystem &amp; Cloud Infrastructure</div>
+        <p class="mb-4">AWS (ECS, EKS, ECR, Fargate, Batch, AppMesh, EC2, S3, RDS, Lambda, VPC, ALB, EBS, Cognito, CloudFront, SQS, SES, CloudWatch, CloudTrail, Transit Gateway, KMS), Azure DevOps, GCP</p>
+
+        <div class="subheading mb-3">Containerization, CI/CD &amp; DevOps</div>
+        <p class="mb-4">Kubernetes, Docker, Helm Charts, Terraform, Ansible, Chef, GitLab CI/CD, Jenkins, GitHub, Bitbucket, CircleCI, AWS CodeBuild, CodeCommit, CodePipeline, Maven, Gradle</p>
+
+        <div class="subheading mb-3">Monitoring, Security &amp; Observability</div>
+        <p class="mb-4">DataDog, NewRelic, Prometheus, Grafana, PagerDuty, BlackDuck, SonarQube, Vault, PCI-Compliance, DevSecOps pipelines</p>
+
+        <div class="subheading mb-3">Databases &amp; Web Technologies</div>
+        <p class="mb-4">SQL, MySQL, SQLite, Amazon RDS, MongoDB, MS SQL, ReactJS, NodeJS, REST API, TCP/IP, DNS</p>
+
       </div>
     </section>
 
@@ -778,14 +665,13 @@
           <li><i class="fa-li fa fa-trophy text-warning"></i>AWS Certified AI Practitioner</li>
           <li><i class="fa-li fa fa-trophy text-warning"></i>AWS Generative AI Foundational</li>
           <li><i class="fa-li fa fa-trophy text-warning"></i>AWS Generative AI Technical Intermediate</li>
+          <li><i class="fa-li fa fa-trophy text-warning"></i>AWS Certified Solutions Architect Associate</li>
           <li><i class="fa-li fa fa-trophy text-warning"></i>Cisco Certified Network Associate (CCNA) – Switching and
             Routing | ID No: 432946442826AQDL, July 2018</li>
           <li><i class="fa-li fa fa-trophy text-warning"></i>Scholarship offered by Florida Institute of Technology
             worth of $8000</li>
           <li><i class="fa-li fa fa-trophy text-warning"></i>Google Developer Challenge Scholarship, Google, Dec 2017
           </li>
-          <li><i class="fa-li fa fa-trophy text-warning"></i>Won Silver Medal in University-level basketball game and
-            cricket</li>
         </ul>
       </div>
     </section>
@@ -796,22 +682,25 @@
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
         <p>Apart from being a Software Developer, I enjoy working out and playing basketball and cricket. I am an avid
-          wanderlust. During the warmer and cold months here in the south, I enjoy surfing, beach reading, and kayaking.
+          wanderlust. During the warmer and cold months here in Florida, I enjoy surfing, beach reading, and kayaking.
         </p>
         <p class="mb-0">When I am home, I spend most of my spare time reading about different things like
           Self-development, Investment strategies in Stocks, Food cuisines, Poetry and Sports. Also, I am an aspiring
           chef who can cook six different cuisines. Frequently, I keep myself updated about latest technology
-          advancements and software releases by reviewing Toms'Guide, Electronics4U, and NYTimes.</p>
+          advancements and software release by reviewing Toms'Guide, Electronics4U, NYTimes.</p>
       </div>
     </section>
 
   </div>
 
+  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
 </body>
